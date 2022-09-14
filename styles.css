@@ -70,4 +70,28 @@ nav {
     color: #fff;
     text-shadow: 0 0 4px #000;
   }
+  .l-section {
+    background-image: url("/img/bread4.jpg");
+    width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
   
+  .main {
+  }
+  
+  .data {
+    margin-bottom: 3rem;
+    color: white;
+  }
+  
+  h1 {
+    font-size: 25px;
+    margin-bottom: 1rem;
+  }
+  .main img {
+    width: 350px;
+    border-radius: 0.5rem;
+  }
