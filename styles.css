@@ -53,6 +53,18 @@ nav ul li a:hover:before {
     padding: 25px;
     cursor: pointer;
 }
+.hamburger.active {
+  right: 66px;
+}
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
 .bar {
     display: block;
     width: 25px;
@@ -98,7 +110,7 @@ nav ul li a:hover:before {
   .l-section {
     background-image: url("/img/bread4.jpg");
     width: 100%;
-    height: 100vh;
+    height: 70em;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -107,14 +119,14 @@ nav ul li a:hover:before {
   
   .main {
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
-    flex-wrap: wrap;
     align-items: center;
     gap: 50px;
   }
   
   .data {
-    width: 500px;
+    max-width: 950px;
     color: white;
     padding: 0 30px;
 
@@ -122,17 +134,33 @@ nav ul li a:hover:before {
   .p1,.p2 {
     font-size: clamp(0.5rem, 0.6rem + 1.5vw, 1.5rem);    
   }
-  h1 {
-    font-size: 25px;
-    padding: 30px 0;
+  h1 {  
+    font-size: clamp(1.6rem, 4vw, 5rem);
+    padding: 50px 0;
   }
   .img_section {
     width: 100%;
     max-width: 500px;
     border-radius: 0.5rem;
-    padding: 50px;
+    padding: 30px;
   }
+@media screen and (min-width: 1024px) {
+    .main {
 
+      display: flex;
+      flex-direction: row;
+    }
+    h1{
+      margin-top: 2em;
+    }
+    .img_section{
+      margin-top: 15em;
+    }
+    .l-section {
+      height: 66rem;
+    }
+
+  }
 @media screen and (min-width: 768px) {
   .hamburger{
     display: none;
@@ -147,10 +175,7 @@ nav ul li a:hover:before {
   }
   .logo{
     width: 125px;
-  }
-  @media screen and (min-width: 840px) {
-    .l-section {
-      height: 100vh;
-    }
-  }
+  } 
+
+
 }
