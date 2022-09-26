@@ -34,8 +34,7 @@ const sr = ScrollReveal({
     reset: true
 })
 
-sr.reveal('.data',{origin: 'left', distance: '70px'})
-
-sr.reveal('.img_section',{origin: 'left', distance: '90px', delay:200})
+sr.reveal('.data',{origin: 'left', distance: '90px'});
+sr.reveal('.img_section',{origin: 'left', distance: '90px', delay:100});
 
 
