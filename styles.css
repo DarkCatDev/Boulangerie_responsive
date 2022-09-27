@@ -18,14 +18,13 @@ nav {
   align-items: center;
 }
 nav ul{
-  list-style: none; 
+  list-style: none;
 }
 nav ul li a {
   position: relative;
   color: white;
   font-size: 18px;
   text-transform: uppercase;
-  list-style: none; 
   text-decoration: none;
   text-shadow: 0 0 4px #000;
 }
@@ -180,7 +179,7 @@ nav ul li a:hover:before {
   text-shadow: 0 0 4px #000;
 }
 
-/*Qui sommes nous */
+/* Qui sommes nous */
 .l-section {
   background-image: url("/img/bread4.jpg");
   width: 100%;
@@ -229,9 +228,9 @@ h1 {
     display: flex;
     flex-direction: row;
   }
-  .data, .img_section{
-    margin-top: 100px;
-  }
+.data, .img_section{
+  margin-top: 100px;
+}
 }
 @media screen and (min-width: 768px) {
   .hamburger {
@@ -248,7 +247,6 @@ h1 {
     margin-right: 4vw;
     display: flex;
     gap: 1.9vw;
-    
   }
   .logo {
     width: 15vw;
